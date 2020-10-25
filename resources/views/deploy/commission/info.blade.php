@@ -16,6 +16,7 @@
 			<p class="mb-0 lead">{{ $commissions_closed_message }}</p>
 			@endif
 		</div>
+
 		<p class="lead">This is a general guide for estimating how much your commission will cost. Prices vary per commission, as they can change as a result of more complex characters, backgrounds, or other factors.</p>
 		<p class="lead"> there something you want that isn't listed here? You can contact me via any of my socials for an exact quote!</p>
 
@@ -23,7 +24,7 @@
 		<div class="commission-figure commission-figure-right {{ theme_class(null, 'commission-figure-light') }}" style="background-image:url('{{ bust('/assets/img/commissions/figure1.png') }}');">
 			<div class="commission-figure-info">
 				<div class="commission-figure-info-inner">
-					<h2>Character Illustrations*</h2>
+					<h2>Character Illustrations</h2>
 					<ul>
 						<li>Single Character - $30 USD</li>
 						<li class="mb-3">Additional Characters - $25 USD</li>
@@ -35,7 +36,7 @@
 						<li>Simple Backgrounds - Free!</li>
 						<li>Complex Backgrounds - ~$20+ USD, contact me for an exact quote</li>
 					</ul>
-					<p>*Subject to complex character fees</p>
+					<p>Subject to complex character fees</p>
 				</div>
 			</div>
 		</div>

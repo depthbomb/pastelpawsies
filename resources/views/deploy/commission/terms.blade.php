@@ -23,7 +23,6 @@
 					<li>Please make sure that you are able to pay shortly after I confirm your commission. I only accept payments through PayPal. I do not and will not accept any other forms of payment.</li>
 					<li>Visual references are very much preferred. I will work without a visual reference but that may be accompanied with a fee depending on what is asked.</li>
 					<li>You may not commission NSFW work unless you are at least 18. If I have a reason to suspect that you are under 18, I will refuse.</li>
-					<li>If you are interested in a commission, you may send me an email or message me on Telegram.</li>
 				</ul>
 			</div>
 		</div>
@@ -76,7 +75,6 @@
 						<li>Vore</li>
 					</ul>
 					<li>I reserve the right to deny or refuse a commission due to a breach of my Terms of Service.</li>
-					<li>I may refuse to draw certain topics if they make me uncomfortable.</li>
 					<li>I reserve the right to post your commission for non-commercial uses. If you would like your art not to be posted, please tell me in advance and I will not.</li>
 					<li>In the case of Telegram stickers, I will send you a compressed folder with your stickers and my contact info sticker. I will also send you a link to the sticker pack. Please do not remove the contact info sticker, but feel free to add the stickers to your own pack.</li>
 				</ul>

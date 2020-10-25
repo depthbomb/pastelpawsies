@@ -12,12 +12,10 @@ Route::group(['prefix' => 'gallery', 'as' => 'gallery'], function() {
 	Route::get('view/{name}', ['uses' => 'GalleryController@getImage','as' => '.image']);
 });
 
+Route::get('commissions/{subpage?}', ['uses' => 'PageController@redirectToCommissionSubpage']);
+
 Route::group(['prefix' => 'commission', 'as' => 'commission'], function() {
-	Route::get('/', ['uses' => 'PageController@redirectToInfo']);
+	Route::get('/', ['uses' => 'PageController@redirectToCommissionInfo']);
 	Route::get('info', ['uses' => 'PageController@commissionInfo', 'as' => '.info']);
 	Route::get('terms', ['uses' => 'PageController@commissionTerms', 'as' => '.terms']);
-});
-
-Route::get('errorpage/{code}', function($code) {
-	return abort($code);
 });

@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -19,6 +20,30 @@ class PageController extends Controller
 		(array) $images = get_setting('gallery_images', 'array');
 
 		return $images;
+	}
+
+	public function redirectToCommissionSubpage($subpage = null)
+	{
+		if ($subpage === null)
+		{
+			return redirect()->route('commission.info');
+		}
+		else
+		{
+			if (Arr::exists(['info', 'terms'], $subpage))
+			{
+				return redirect()->route('commission.'.$subpage);
+			}
+			else
+			{
+				return abort(404);
+			}
+		}
+	}
+
+	public function redirectToCommissionInfo()
+	{
+		return redirect()->route('commission.info');
 	}
 
 	public function commissionInfo()
