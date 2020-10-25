@@ -1,0 +1,11 @@
+body.has-navbar {
+	display: flex;
+	flex-direction: column;
+	padding-top: 56px;
+	min-height: 100vh;
+
+	.content {
+		margin-top: 2rem;
+		flex: 1;
+	}
+}

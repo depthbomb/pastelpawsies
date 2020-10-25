@@ -1,0 +1,17 @@
+#gallery {
+
+	.gallery-thumbnail {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		height: 300px;
+
+		cursor: pointer;
+		border-radius: $border-radius-lg;
+		overflow: hidden;
+
+		& > img {
+			height: 100%;
+		}
+	}
+}

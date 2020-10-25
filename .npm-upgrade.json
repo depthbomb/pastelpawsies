@@ -1,0 +1,12 @@
+{
+	"ignore": {
+		"terser-webpack-plugin": {
+			"versions": "5.0.1",
+			"reason": ""
+		},
+		"webpack": {
+			"versions": "5.2.0",
+			"reason": ""
+		}
+	}
+}

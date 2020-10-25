@@ -1,0 +1,2 @@
+<script type="text/javascript">this.top.location!==this.location&&(this.top.location=this.location)</script>
+<script type="text/javascript">if(window.document.documentMode)window.location.href='/ie.html'</script>

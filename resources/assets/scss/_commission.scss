@@ -1,0 +1,84 @@
+.commission-status {
+	display: block;
+	padding: 1rem;
+
+	color: $white;
+	text-align: center;
+	border: 2px solid transparent;
+
+	&.commission-status-open {
+		background-color: $green;
+		border-color: darken($green, 10%);
+	}
+
+	&.commission-status-closed {
+		background-color: $red;
+		border-color: darken($red, 10%);
+		background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, darken($red, 10%) 20px, darken($red, 10%) 40px);
+	}
+}
+
+.commission-figure {
+	position: relative;
+	display: flex;
+
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+	height: 500px;
+	background-size: 500px;
+	background-repeat: no-repeat;
+
+	// TODO: Refactor all below
+
+	&.commission-figure-light {
+
+		&.commission-figure-right .commission-figure-info {
+			justify-content: flex-end;
+			color: $black;
+			background-image: linear-gradient(90deg, transparent 0%, $gray-200 38%);
+		}
+
+		&.commission-figure-left .commission-figure-info {
+			justify-content: flex-start;
+			color: $black;
+			background-image: linear-gradient(-90deg, transparent 0%, $gray-200 38%);
+		}
+	}
+
+	.commission-figure-info {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		top: 0;
+		left: 0;
+		padding: 0 1rem;
+		width: 100%;
+		height: 100%;
+		color: $white;
+
+		& > .commission-figure-info-inner {
+			max-width: 700px;
+		}
+	}
+
+	&.commission-figure-right {
+		background-position: left center;
+	}
+
+	&.commission-figure-left {
+		background-position: right center;
+	}
+
+	&.commission-figure-right .commission-figure-info {
+		justify-content: flex-end;
+		background-image: linear-gradient(90deg, transparent 0%, $darker 38%);
+	}
+
+	&.commission-figure-left .commission-figure-info {
+		justify-content: flex-start;
+		background-image: linear-gradient(-90deg, transparent 0%, $darker 38%);
+	}
+}
