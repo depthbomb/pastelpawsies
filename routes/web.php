@@ -10,6 +10,7 @@ Route::get('about', ['uses' => 'PageController@about', 'as' => 'about']);
 Route::group(['prefix' => 'gallery', 'as' => 'gallery'], function() {
 	Route::get('/', ['uses' => 'GalleryController@index','as' => '.index']);
 	Route::get('view/{name}', ['uses' => 'GalleryController@getImage','as' => '.image']);
+	Route::get('thumbnail/{name}', ['uses' => 'GalleryController@getThumbnail','as' => '.thumbnail']);
 });
 
 Route::get('commissions/{subpage?}', ['uses' => 'PageController@redirectToCommissionSubpage']);

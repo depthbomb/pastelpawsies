@@ -3,7 +3,7 @@
 	Made with love by depthbomb 🐐
 	https://s.team/p/fwc-crhc
 	------------------------------
-	Release Candidate 2 -- https://github.com/depthbomb/pastelpawsies
+	Release Candidate 3 -- https://github.com/depthbomb/pastelpawsies
 
 --><html lang="en" dir="ltr" class="www">
 	<head>

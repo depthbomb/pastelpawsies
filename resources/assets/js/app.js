@@ -40,7 +40,7 @@ window.$PP = new function() {
 	this.InitGallery = function() {
 		const element = document.getElementById('gallery');
 		if (element) {
-			const viewer = new Viewer(element);
+			const viewer = new Viewer(element, { url: 'data-full' });
 		}
 	};
 	this.CheckThemeCookie = function() {

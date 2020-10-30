@@ -20,7 +20,7 @@
 			@foreach ($chunk as $title => $image)
 			<div class="col-lg-3">
 				<div class="gallery-thumbnail">
-					<img src="{{ $image }}" title="{{ $title }}" alt="{{ $title }}">
+					<img src="{{ route('gallery.thumbnail', $image) }}" title="{{ $title }}" alt="{{ $title }}" data-full="{{ route('gallery.image', $image) }}">
 				</div>
 			</div>
 			@endforeach

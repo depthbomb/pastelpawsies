@@ -3,33 +3,48 @@
 	width: 100vw;
 	height: 100vh;
 	justify-content: center;
+	align-items: center;
 
-	background-image: url('/assets/img/hero-transparent.png');
+	background-image: none;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
+	h1 {
+		font-family: 'kurri_islandbold', sans-serif;
+		font-size: 3rem;
+		font-weight: 100;
+
+		& + p {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+	}
+
+	.hero-buttons {
+		margin-top: 1rem;
+
+		a.btn {
+			text-transform: lowercase;
+		}
+	}
+
 	.hero-content {
-		margin-top: 12.5%;
-		margin-right: 45%;
+		text-align: center;
+	}
+
+	@include media-breakpoint-up(lg) {
+		align-items: flex-start;
+		background-image: url('/assets/img/hero-transparent.png');
 
 		h1 {
-			font-family: 'kurri_islandbold', sans-serif;
 			font-size: 4rem;
-			font-weight: 100;
-
-			& + p {
-				margin: 0;
-				font-size: 1.5rem;
-			}
 		}
 
-		.hero-buttons {
-			margin-top: 1rem;
-
-			a.btn {
-				text-transform: lowercase;
-			}
+		.hero-content {
+			text-align: unset;
+			margin-top: 12.5%;
+			margin-right: 45%;
 		}
 	}
 }

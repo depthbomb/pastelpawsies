@@ -2,6 +2,10 @@ nav.navbar {
 	transition: box-shadow 0.2s ease, border-bottom 0.2s ease;
 	backdrop-filter: blur(1rem);
 
+	button.navbar-toggler {
+		border: none;
+	}
+
 	a.navbar-brand {
 		font-family: 'kurri_islandbold', sans-serif;
 		transition: 0.2s linear;
