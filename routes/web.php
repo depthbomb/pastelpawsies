@@ -7,6 +7,12 @@ Route::get('ie', ['uses' => 'PageController@ieWarning', 'as' => 'ie']);
 Route::get('/', ['uses' => 'PageController@landing', 'as' => 'landing']);
 Route::get('about', ['uses' => 'PageController@about', 'as' => 'about']);
 
+Route::get('trello', ['uses' => 'RedirectController@trelloBoard', 'as' => 'trello']);
+Route::get('queue', ['uses' => 'RedirectController@trelloBoard']);
+Route::get('commission-queue', ['uses' => 'RedirectController@trelloBoard']);
+Route::get('commission-form', ['uses' => 'RedirectController@commissionForm', 'as' => 'commissionform']);
+Route::get('form', ['uses' => 'RedirectController@commissionForm']);
+
 Route::group(['prefix' => 'gallery', 'as' => 'gallery'], function() {
 	Route::get('/', ['uses' => 'GalleryController@index','as' => '.index']);
 	Route::get('view/{name}', ['uses' => 'GalleryController@getImage','as' => '.image']);

@@ -49,7 +49,7 @@ window.$PP = new function() {
 			const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 			self.DebugLog('prefersDarkTheme=', prefersDarkTheme);
 			Cookies.set('dark_theme', prefersDarkTheme ? 'yes' : 'no', { expires: 365 });
-			window.location.reload(); // Reload the page so the backend can utilize the new cookie
+			self.RedrawPage();
 		}
 	};
 	this.InitThemeToggler = function() {
@@ -57,9 +57,22 @@ window.$PP = new function() {
 		if (toggler) {
 			toggler.addEventListener('change', function(e) {
 				Cookies.set('dark_theme', toggler.checked ? 'yes' : 'no', { expires: 365 });
-				window.location.reload();
+				self.RedrawPage();
 			});
 		}
+	};
+	this.RedrawPage = function() {
+		const url = window.location.href;
+		fetch(url, {
+			method: 'GET'
+		})
+		.then(response => response.text())
+		.then(data => {
+			document.open();
+			document.write(data);
+			document.close();
+		})
+		.catch(error => window.location.reload());
 	};
 };
 const $PP = window.$PP;

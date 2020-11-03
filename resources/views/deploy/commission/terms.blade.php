@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Requirements</h3>
+				<h2 class="ki ki-bold">Requirements</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>
@@ -29,7 +29,7 @@
 
 		<div class="mt-5 row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Payment</h3>
+				<h2 class="ki ki-bold">Payment</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>
@@ -45,27 +45,26 @@
 
 		<div class="mt-5 row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Process</h3>
+				<h2 class="ki ki-bold">Process</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>
 					<li>You may opt-in to receive work-in-progress updates of your commission. You may request changes to W.I.P.s, as long as it falls in line with the theme of what was commissioned.</li>
 					<li>I may post a W.I.P. of your commission publicly. If you would like me not to, please inform me.</li>
 					<li>If asked, I give you an estimated completion date when I finish your sketch, and in the case that it is not possible for me to complete it by this date, I will inform you.</li>
-					<li>I have a Trello! If you would like to view the progress of your commission, you can do so by visiting my commission queue on <a href="https://trello.com/b/qutx57bA/pastelpawsies-commissions-queue" target="_blank">Trello.</a></li>
+					<li>I have a Trello! If you would like to view the progress of your commission, you can do so by visiting my commission queue on <a href="{{ route('trello') }}" target="_blank">Trello.</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="mt-5 row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Artist Rights</h3>
+				<h2 class="ki ki-bold">Artist Rights</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>
 					<li>I will refuse to draw certain topics if they make me feel uncomfortable. <a href="#forbidden-topics" data-toggle="collapse">Click here to see that list of topics.</a></li>
 					<ul id="forbidden-topics" class="collapse">
-						<li>Gore</li>
 						<li>Underaged characters</li>
 						<li>Derogatory themes</li>
 						<li>Scat/watersports</li>
@@ -73,6 +72,7 @@
 						<li>Micro/Macro</li>
 						<li>Inflation</li>
 						<li>Vore</li>
+						<li>Gore</li>
 					</ul>
 					<li>I reserve the right to deny or refuse a commission due to a breach of my Terms of Service.</li>
 					<li>I reserve the right to post your commission for non-commercial uses. If you would like your art not to be posted, please tell me in advance and I will not.</li>
@@ -83,7 +83,7 @@
 
 		<div class="mt-5 row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Commissioner Rights</h3>
+				<h2 class="ki ki-bold">Commissioner Rights</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>
@@ -97,7 +97,7 @@
 
 		<div class="mt-5 row">
 			<div class="col-lg-3">
-				<h3 class="text-uppercase">Refunds</h3>
+				<h2 class="ki ki-bold">Refunds</h2>
 			</div>
 			<div class="col-lg-9">
 				<ul>

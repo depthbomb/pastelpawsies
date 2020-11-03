@@ -18,7 +18,8 @@
 		</div>
 
 		<p class="lead">This is a general guide for estimating how much your commission will cost. Prices vary per commission, as they can change as a result of more complex characters, backgrounds, or other factors.</p>
-		<p class="lead"> there something you want that isn't listed here? You can contact me via any of my socials for an exact quote!</p>
+		<p class="lead">Is there something you want that isn't listed here? You can contact me via any of my socials for an exact quote!</p>
+		<p class="lead">My commission queue can be seen on <a href="{{ route('trello') }}" target="_blank">this Trello board.</a></p>
 
 		@if(!request()->should_use_mobile)
 			@include('partials/commission/_figures-desktop')
@@ -26,6 +27,6 @@
 			@include('partials/commission/_figures-mobile')
 		@endif
 
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSer8Tjsw2IO-kxs1cS8l8oQFY807j90ombSNDbJTl-MvMVQmg/viewform" class="mt-4 p-3 btn btn-primary btn-block text-white" target="_blank">Commission Form</a>
+		<a href="{{ route('commissionform') }}" class="mt-4 p-3 btn btn-primary btn-block text-white" target="_blank">Commission Form</a>
 	</div>
 @endsection

@@ -3,7 +3,7 @@
 	Made with love by depthbomb 🐐
 	https://s.team/p/fwc-crhc
 	------------------------------
-	Release Candidate 3 -- https://github.com/depthbomb/pastelpawsies
+	Release Candidate 4 -- https://github.com/depthbomb/pastelpawsies
 
 --><html lang="en" dir="ltr" class="www">
 	<head>
@@ -54,7 +54,7 @@
 
 		@stack('head')
 	</head>
-	<body class="{{ $has_navbar ? 'has-navbar' : 'has-no-navbar' }} {{ theme_class('bg-dark text-white', 'bg-white text-dark') }}">
+<body id="{{ isset($id) ? $id : 'not-nirvana-goatfood' }}" class="{{ $has_navbar ? 'has-navbar' : 'has-no-navbar' }} {{ theme_class('bg-dark text-white', 'bg-white text-dark') }}">
 		@if ($has_navbar)
 			@include('partials/_navbar')
 		@endif
