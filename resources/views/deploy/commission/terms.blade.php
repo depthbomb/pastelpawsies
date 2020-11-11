@@ -36,6 +36,7 @@
 					<li>I use PayPal for payments. No account with PayPal is needed, only a working credit or debit card and an email. (Prepaid Visa cards also work.)</li>
 					<li>All of my prices are in USD.</li>
 					<li>You will receive an invoice from me with my PayPal email. I will not begin work on your commission until your commission is paid for. If your payment isn't received within five days of the invoice being sent, your commission will be cancelled.</li>
+					<li>I charge a 4% fee to the base price of your commission to compensate for PayPal seller fees.</li>
 					<li>If there are extenuating circumstances and you cannot pay within five days, contact me so we can work something out.</li>
 					<li>I do not accept other types of payments.</li>
 					<li>If you are splitting a payment, please inform me.</li>
